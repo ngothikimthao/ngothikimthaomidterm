@@ -1,0 +1,101 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# new feature"
+      },
+      {
+        "line": 2,
+        "value": "# Tags: optional"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17477042400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.openWebsite(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Customer login",
+        "description": "",
+        "id": "customer-login;customer-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2150791100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click username as Harry Potter",
+            "match": {
+              "location": "LoginTest.clickUserName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2094209400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click submit",
+            "match": {
+              "location": "LoginTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 240200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify that login successfully with name as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginTest.verifyLoginSuccesfully(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer login",
+    "description": "",
+    "id": "customer-login",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/login.feature"
+  }
+]
